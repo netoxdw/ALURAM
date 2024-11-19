@@ -1,0 +1,548 @@
+/* styles.css */
+
+.header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    z-index: 100;
+}
+
+/* Cambiar el color de los enlaces de la navbar */
+.navbar .nav-link {
+    color: #173d98 !important;
+    font-weight: 500;
+}
+
+.navbar .nav-link:hover {
+    color: #0f48f3 !important;
+}
+
+/* Cambiar el color del botón de WhatsApp */
+.navbar .btn-success {
+    background-color: #fff;
+    border: 2px solid #1DA851;
+    color: #262626;
+}
+
+.navbar .btn-success:hover {
+    background-color: #1DA851;
+    color: #fff;
+}
+
+/* Estilos para el texto de la marca */
+.brand-text {
+    color: #112a70;
+    font-size: 1.5rem;
+    /* Ajusta el tamaño según tu preferencia */
+    font-weight: 600;
+    position: relative;
+}
+
+/* Línea debajo del texto de la marca */
+.brand-text::after {
+    content: "";
+    display: block;
+    width: 50%;
+    /* Ajusta el ancho de la línea según prefieras */
+    height: 2px;
+    background-color: #112a70;
+    margin-top: 5px;
+    border-radius: 2px;
+}
+
+/* Estilos para la Barra Azul Superior */
+.top-bar {
+    background-color: #112a70;
+    /* Color azul Bootstrap (bg-primary) */
+}
+
+.top-bar a {
+    text-decoration: none;
+}
+
+.top-bar a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para los íconos de Font Awesome en la barra azul */
+.top-bar .fa-facebook-f,
+.top-bar .fa-twitter,
+.top-bar .fa-instagram {
+    font-size: 1.2rem;
+    /* Ajusta el tamaño según tu preferencia */
+}
+
+/* Opcional: Cambiar el color de los íconos al pasar el cursor */
+.top-bar a:hover i {
+    color: #dcdcdc;
+    /* Un gris claro al pasar el cursor */
+    transition: color 0.3s ease;
+}
+
+/* Rotación al pasar el cursor */
+.top-bar .fa-phone:hover {
+    transform: rotate(360deg);
+    transition: transform 0.5s ease, color 0.3s ease;
+}
+
+/* Cambio de color al pasar el cursor */
+.top-bar .fa-phone:hover {
+    color: #ffcc00;
+    /* Amarillo */
+    transition: color 0.3s ease;
+}
+
+/* ################################################################################################ */
+/* Hero */
+
+
+.hero-banner {
+    background-image: url('/assets/img/4873411.jpg');
+    /* Reemplaza con la ruta de tu imagen */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    /* Altura completa de la ventana */
+    position: relative;
+    color: #ffffff;
+    /* Color del texto blanco */
+}
+
+.hero-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(209, 209, 209, 0.1);
+    /* Superposición azul semitransparente */
+    z-index: 1;
+}
+
+.hero-banner .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-banner h1 {
+    font-size: 2.5rem;
+    color: #112a70;
+}
+
+.lead {
+    font-weight: 400;
+    color: #112a70;
+}
+
+.hero-banner .btn-success {
+    background-color: #25D366;
+    border: none;
+}
+
+.hero-banner .btn-success:hover {
+    background-color: #1DA851;
+}
+
+@media (min-width: 768px) {
+    .hero-banner h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero-banner p {
+        font-size: 1.25rem;
+    }
+}
+
+/* ########################################################################################### */
+
+/* Estilos para la Sección Nosotros */
+.nosotros-section {
+    background-image: url('/assets/img/NOSOTROS.jpg');
+    /* Reemplaza con la ruta de tu imagen de fondo */
+    background-size: cover;
+    background-position: top center;
+    /* Alinea la imagen al top */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* Activa el efecto parallax */
+    position: relative;
+    padding: 100px 0;
+    /* Espaciado superior e inferior */
+    color: #ffffff;
+    /* Color del texto blanco por defecto */
+}
+
+/* Eliminamos la superposición ::before ya que no es necesaria */
+.nosotros-section::before {
+    /* Puedes eliminar este bloque si no deseas una superposición adicional */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(12, 12, 12, 0.3);
+    /* border-radius: 15px; */
+    z-index: 1;
+}
+
+.nosotros-content {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(216, 118, 7, 0.8);
+    /* Color semi-transparente #d87607 con opacidad 0.6 */
+    border-radius: 15px;
+    /* Bordes redondeados */
+    max-width: 800px;
+    /* Ancho máximo del cuadro */
+    margin: 0 auto;
+    /* Centrar horizontalmente */
+    padding: 30px;
+    /* Padding interno */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Sombra para darle profundidad */
+}
+
+.nosotros-section h2,
+.nosotros-section p {
+    color: #ffffff;
+    /* Asegura que el texto dentro del cuadro sea blanco */
+}
+
+@media (max-width: 767.98px) {
+    .nosotros-section {
+        padding: 50px 0;
+        /* Reducir el padding en pantallas pequeñas */
+    }
+
+    .nosotros-content {
+        padding: 20px;
+        /* Reducir el padding interno en pantallas pequeñas */
+    }
+
+    .nosotros-section h2 {
+        font-size: 1.75rem;
+        /* Ajustar el tamaño del título */
+    }
+
+    .nosotros-section p {
+        font-size: 1rem;
+        /* Ajustar el tamaño del párrafo */
+    }
+}
+
+
+/* #########################################################################################################################33 */
+
+/* Estilos para la Sección Servicios */
+#servicios h2 {
+    font-size: 2.5rem;
+    color: #112a70;
+    /* Azul Bootstrap */
+    font-weight: 700;
+}
+
+.card-title {
+    color: #fff;
+}
+
+
+#servicios .list-group-item {
+    border: none;
+    padding-left: 0;
+}
+
+.card-maquila {
+    background-color: #1981f7;
+}
+
+.card-embarques {
+    background-color: #f49d0c;
+
+}
+
+#servicios .list-group-flush {
+    background-color: transparent;
+    /* Fondo transparente para la lista */
+}
+
+#servicios .list-group-item {
+    background-color: transparent;
+    /* Fondo transparente para cada elemento de la lista */
+    border: none;
+    /* Eliminar bordes */
+    padding-left: 0;
+    /* Eliminar padding izquierdo si es necesario */
+    color: #ffffff;
+    /* Asegurar que el texto sea blanco para legibilidad */
+}
+
+/* ############################################################################################3 */
+/* styles.css */
+
+/* ... Código CSS existente ... */
+
+/* Estilos para la Sección Anuncios */
+
+.anuncio {
+    color: #ffffff;
+    /* Color del texto blanco */
+    min-height: 50vh;
+    /* Altura mínima para uniformidad */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Colores de Fondo Diferentes para Cada Anuncio */
+.anuncio-1 {
+    background-color: #fc0303;
+    /* Coral */
+}
+
+.anuncio-2 {
+    background-color: #000;
+    /* Azul Medio */
+}
+
+.anuncio-3 {
+    background-color: #c4870a;
+    /* Verde Lima */
+}
+
+/* Estilos para el Título de los Anuncios */
+.anuncio h3 {
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+/* Estilos para el Párrafo de los Anuncios */
+.anuncio p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Estilos para el Botón de Llamado a la Acción */
+.anuncio .btn-primary {
+    background-color: #d3bf25;
+    border: none;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.anuncio .btn-primary:hover {
+    background-color: #a8981d;
+
+}
+
+
+
+.hero-banner .btn-success:hover {
+    background-color: #1DA851;
+}
+
+/* Responsividad: Asegurar que los anuncios se apilen en columna en pantallas pequeñas */
+@media (max-width: 991.98px) {
+
+    /* Bootstrap breakpoint for lg */
+    .anuncio {
+        min-height: 200px;
+        /* Ajustar altura mínima en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 575.98px) {
+
+    /* Bootstrap breakpoint for xs */
+    #anuncios h2 {
+        font-size: 2rem;
+    }
+
+    .anuncio h3 {
+        font-size: 1.5rem;
+    }
+
+    .anuncio p {
+        font-size: 0.9rem;
+    }
+}
+
+
+/* ####################################################################################################### */
+/* Banner panoramica */
+.panoramica-section {
+    background-image: url('/assets/img/foto\ panoramica.jpg');
+    /* Reemplaza con la ruta de tu imagen de fondo */
+    background-size: cover;
+    background-position: top center;
+    /* Alinea la imagen al top */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* Activa el efecto parallax */
+    position: relative;
+    padding: 100px 0;
+    /* Espaciado superior e inferior */
+    color: #ffffff;
+    /* Color del texto blanco por defecto */
+}
+
+.banner-panoramica::before {
+    /* Puedes eliminar este bloque si no deseas una superposición adicional */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(12, 12, 12, 0.3);
+    /* border-radius: 15px; */
+    z-index: 1;
+}
+
+.panoramica-content {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(78, 73, 68, 0.8);
+    /* Color semi-transparente #d87607 con opacidad 0.6 */
+    border-radius: 15px;
+    /* Bordes redondeados */
+    max-width: 800px;
+    /* Ancho máximo del cuadro */
+    margin: 0 auto;
+    /* Centrar horizontalmente */
+    padding: 30px;
+    /* Padding interno */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Sombra para darle profundidad */
+    text-align: center;
+}
+
+.panoramica-content .btn-success {
+    background-color: #25D366;
+    border: none;
+}
+
+.panoramica-content .btn-success:hover {
+    background-color: #1DA851;
+}
+@media (max-width: 767.98px) {
+    .panoramica-section {
+        padding: 50px 0;
+        background-size: auto;
+
+        /* Reducir el padding en pantallas pequeñas */
+    }
+
+    .panoramica-content {
+        padding: 20px;
+        /* Reducir el padding interno en pantallas pequeñas */
+    }
+
+    .panoramica-section h2 {
+        font-size: 1.75rem;
+        /* Ajustar el tamaño del título */
+    }
+
+    .panoramica-section p {
+        font-size: 1rem;
+        /* Ajustar el tamaño del párrafo */
+    }
+}
+
+
+/* ########################################################################################################### */
+/* styles.css */
+
+/* ... Código CSS existente ... */
+
+/* Estilos para la Sección Ubicación */
+#ubicacion h2 {
+    font-size: 2.5rem;
+    color: #007bff;
+    /* Azul Bootstrap */
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+#ubicacion .btn-primary {
+    background-color: #007bff;
+    /* Azul Bootstrap */
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+}
+
+#ubicacion .btn-primary:hover {
+    background-color: #0056b3;
+    /* Azul más oscuro al pasar el cursor */
+    color: #ffffff;
+}
+
+/* Ajustes Responsivos para la Sección Ubicación */
+@media (max-width: 767.98px) {
+
+    /* Bootstrap breakpoint para pantallas pequeñas */
+    #ubicacion h2 {
+        font-size: 2rem;
+    }
+
+    #ubicacion .btn-primary {
+        padding: 0.5rem 1rem;
+        font-size: 0.9rem;
+    }
+}
+
+
+
+/* ###################################################################################################### */
+
+/* styles.css */
+
+/* ... Código CSS existente ... */
+
+/* Estilos para el Footer */
+footer {
+    background-color: #000000;
+    /* Fondo negro */
+    color: #ffffff;
+    /* Texto blanco */
+}
+
+footer a {
+    color: #ffffff;
+    /* Enlaces con texto blanco por defecto */
+    text-decoration: none;
+    /* Sin subrayado */
+}
+
+footer a:hover {
+    color: #ffc107;
+    /* Cambiar color al pasar el cursor (opcional) */
+}
+
+footer .text-warning {
+    color: #ffc107 !important;
+    /* Color amarillo para iconos de redes sociales */
+}
+
+/* Iconos de Redes Sociales */
+footer .fa-facebook-f,
+footer .fa-twitter,
+footer .fa-instagram,
+footer .fa-linkedin-in {
+    color: #ffc107;
+    /* Color amarillo */
+    transition: color 0.3s ease;
+}
+
+footer .fa-facebook-f:hover,
+footer .fa-twitter:hover,
+footer .fa-instagram:hover,
+footer .fa-linkedin-in:hover {
+    color: #ffffff;
+    /* Color blanco al pasar el cursor */
+}
