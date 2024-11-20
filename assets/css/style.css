@@ -133,8 +133,9 @@
 }
 
 .lead {
+    margin-top: 20px;
     font-weight: 400;
-    color: #112a70;
+    color: #173d98;
 }
 
 .hero-banner .btn-success {
@@ -236,7 +237,87 @@
 
 
 /* #########################################################################################################################33 */
+/* styles.css */
 
+/* ... Código CSS existente ... */
+
+/* Estilos para la Sección Compra en Línea */
+#compra-en-linea {
+    background-color: #ffffff; /* Fondo blanco para resaltar la sección */
+  }
+  
+  #compra-en-linea h2 {
+    color: #173d98; /* Color azul especificado */
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+  
+  #compra-en-linea .card {
+    border: none;
+    background-color: #f8f9fa; /* Fondo suave para las tarjetas */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  #compra-en-linea .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  #compra-en-linea .card-body {
+    padding: 2rem 1rem;
+  }
+  
+  #compra-en-linea .card-title {
+    color: #173d98; /* Color azul para los títulos de las tarjetas */
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  
+  #compra-en-linea .card-text {
+    color: #555555; /* Color gris para la descripción */
+    font-size: 1rem;
+  }
+  
+  #compra-en-linea .btn-primary {
+    background-color: #173d98; /* Azul especificado */
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  #compra-en-linea .btn-primary:hover {
+    background-color: #0f2c6b; /* Azul más oscuro al pasar el cursor */
+    color: #ffffff;
+  }
+  
+  /* Iconos de Font Awesome en las Tarjetas */
+  #compra-en-linea .card i {
+    color: #173d98; /* Color azul para los iconos */
+  }
+  
+  @media (max-width: 767.98px) { /* Ajustes para pantallas pequeñas */
+    #compra-en-linea h2 {
+      font-size: 2rem;
+    }
+    
+    #compra-en-linea .card-title {
+      font-size: 1.1rem;
+    }
+    
+    #compra-en-linea .card-text {
+      font-size: 0.95rem;
+    }
+    
+    #compra-en-linea .btn-primary {
+      font-size: 0.9rem;
+      padding: 0.5rem 1rem;
+    }
+  }
+
+
+/* #########################################################################################################################33 */
 /* Estilos para la Sección Servicios */
 #servicios h2 {
     font-size: 2.5rem;

@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Catálogo | Aluram</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <!-- Tu CSS personalizado -->
+    <link rel="stylesheet" href="/assets/css/catalogo.css">
+</head>
+
+<body>
+
+    <!-- Barra Azul Superior -->
+    <div class="top-bar bg-primary text-white py-2">
+        <div class="container d-flex justify-content-between align-items-center">
+            <div>
+                <!-- Información de contacto con ícono de teléfono de Font Awesome -->
+                <span><i class="fa-solid fa-phone me-2"></i> +123 456 7890</span>
+            </div>
+            <div>
+                <!-- Enlaces a redes sociales utilizando Font Awesome -->
+                <a href="https://www.facebook.com/" class="text-white me-3" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://twitter.com/" class="text-white me-3" target="_blank">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.instagram.com/" class="text-white" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navbar existente -->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f8f9fa;">
+        <div class="container">
+            <!-- Logo y Nombre de la Empresa -->
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="/assets/img/Aluram-logo.png" alt="Aluram" width="50" height="40"
+                    class="d-inline-block align-text-center">
+                <span class="brand-text ms-2">ALURAM</span>
+            </a>
+            <!-- Botón de hamburguesa para móviles -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Enlaces de navegación -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="nosotros.html">Nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="reconocimientos.html">Reconocimientos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="servicios.html">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="materiales.html">Materiales</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-success ms-3" href="https://wa.me/tu-numero-de-whatsapp" target="_blank">
+                            WhatsApp
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner de Catálogo -->
+    <section id="banner-catalogo" class="d-flex align-items-center justify-content-center text-center banner-catalogo">
+        <div class="container">
+            <h1 class="display-4 fw-bold text-white">Catálogo de marcos y consumibles | Aluram</h1>
+            <p class="lead text-white mb-4">Marcos mdf estilos únicos, diferentes tamaños y calidad.</p>
+            <a href="#pasos-compra" class="btn btn-arrow-down">
+                Catálogo <i class="fas fa-chevron-down ms-2"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Aquí puedes agregar el resto de tu contenido del catálogo -->
+    <!-- Sección Compra en Línea -->
+    <section id="pasos-compra" class="py-5 bg-white">
+        <div class="container">
+            <h2 class="text-center mb-5">Cómo Hacer tu Pedido</h2>
+            <div class="row">
+
+                <!-- Paso 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center border-0 shadow-sm">
+                        <div class="card-body">
+                            <i class="fas fa-box-open fa-3x mb-3 text-primary"></i>
+                            <h5 class="card-title">Paso 1: Entra al Catálogo</h5>
+                            <p class="card-text">Explora nuestro catálogo y agrega los productos que necesitas
+                                utilizando el botón de agregar.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paso 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center border-0 shadow-sm">
+                        <div class="card-body">
+                            <i class="fas fa-shopping-cart fa-3x mb-3 text-primary"></i>
+                            <h5 class="card-title">Paso 2: Gestiona tu Carrito</h5>
+                            <p class="card-text">En el carrito de compra, aumenta la cantidad de piezas o quita
+                                productos según tus necesidades y da clic en continuar.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paso 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center border-0 shadow-sm">
+                        <div class="card-body">
+                            <i class="fas fa-user-check fa-3x mb-3 text-primary"></i>
+                            <h5 class="card-title">Paso 3: Introduce tus Datos</h5>
+                            <p class="card-text">Ingresa tu nombre y elige tu forma de pago: Online o en efectivo.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paso 4 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center border-0 shadow-sm">
+                        <div class="card-body">
+                            <i class="fas fa-paper-plane fa-3x mb-3 text-primary"></i>
+                            <h5 class="card-title">Paso 4: Envía tu Pedido</h5>
+                            <p class="card-text">Da clic en enviar pedido, y este se enviará por WhatsApp a uno de
+                                nuestros vendedores.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Paso 5 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 text-center border-0 shadow-sm">
+                        <div class="card-body">
+                            <i class="fas fa-comments fa-3x mb-3 text-primary"></i>
+                            <h5 class="card-title">Paso 5: Coordina la Entrega</h5>
+                            <p class="card-text">Conversa con nuestro vendedor para acordar la entrega de tu pedido.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Productos -->
+    <section id="productos" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Panoramicas</h2>
+            <div class="row">
+
+                <!-- Producto 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="/assets/img/panoramica-yingyang.jpg" class="card-img-top" alt="Producto 1">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Ying Yang</h5>
+                            <p class="card-text">DE NUESTRA LINEA MAS NUEVA
+                                DISPONIBLE EN DIFERENTES COLORES.</p>
+                            <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="/assets/img/PANORAMICA-AZTECA-3D.jpg" class="card-img-top" alt="Producto 2">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">DOBLEE ESPACIO AZTECA 3D</h5>
+                            <p class="card-text">BASE PANORAMICA DONLE ESPACIO AZTECA 3D.</p>
+                            <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="/assets/img/400x200_3927be1d957a7141d4dc.jpg" class="card-img-top" alt="Producto 3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">ROBOTICO</h5>
+                            <p class="card-text">PANORAMICA DOBLE ESPACIO ROBOTICO VINO/NEGRO.</p>
+                            <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Añade más productos según sea necesario -->
+
+            </div>
+        </div>
+
+        <div class="container">
+            <h2 class="text-center mb-5">Consumibles</h2>
+            <div class="row">
+
+                <!-- Producto 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="/assets/img/aluminio-grabar.jpg" class="card-img-top" alt="Producto 1">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Aluminio para grabar</h5>
+                            <p class="card-text">Aluminio para grabar punta diamante o grabado laser</p>
+                            <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="/assets/img/aluminio-grabar.jpg" class="card-img-top" alt="Producto 2">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Aluminio para sublimar</h5>
+                            <p class="card-text">Plasma a todo color con nuestro aluminio para sublimar.</p>
+                            <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="/assets/img/cintadoblecara.jpg" class="card-img-top" alt="Producto 3">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Cinta doble cara roja</h5>
+                            <p class="card-text">Maxima adherencia para tus placas.</p>
+                            <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Añade más productos según sea necesario -->
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+
+                <!-- Primera Columna: Horarios -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-3">Horarios de Atención</h5>
+                    <table>
+                        <tbody>
+                          <tr>
+                            <td>Lunes - Jueves:</td>
+                            <td>10am - 6:30pm</td>
+                        </tr>
+                        <tr>
+                            <td>Viernes - Domingo:</td>
+                            <td>10am - 10pm</td>
+                        </tr>
+                        </tbody>
+                      </table>
+                </div>
+
+                <!-- Segunda Columna: Quiénes Somos -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-3">Quiénes Somos</h5>
+                    <p>
+                        Aluram es una empresa dedicada a la distribución de diplomas, agradecimientos y bases
+                        panorámicas, ofreciendo productos de alta calidad para satisfacer las necesidades de nuestros
+                        clientes.
+                    </p>
+                </div>
+
+                <!-- Tercera Columna: Contacto y Redes Sociales -->
+                <div class="col-md-4 mb-4">
+                    <h5 class="mb-3">Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="fas fa-map-marker-alt me-2"></i> Calle Falsa 123, Ciudad de México</li>
+                        <li><i class="fas fa-envelope me-2"></i> contacto@aluram.com</li>
+                        <li><i class="fas fa-phone me-2"></i> +52 55 1234 5678</li>
+                    </ul>
+                    <div class="mt-3">
+                        <!-- Enlaces a Redes Sociales -->
+                        <a href="https://www.facebook.com/" class="text-warning me-3" target="_blank"
+                            aria-label="Facebook">
+                            <i class="fab fa-facebook-f fa-lg"></i>
+                        </a>
+                        <a href="https://twitter.com/" class="text-warning me-3" target="_blank" aria-label="Twitter">
+                            <i class="fab fa-twitter fa-lg"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" class="text-warning me-3" target="_blank"
+                            aria-label="Instagram">
+                            <i class="fab fa-instagram fa-lg"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/" class="text-warning" target="_blank" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <hr class="bg-white">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 Aluram. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS y dependencias -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
